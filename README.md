@@ -1,62 +1,63 @@
-## Всем привет в этой репе я собрал информацию по которой я учился администрировать,
+# Всем привет в этой репе я собрал информацию по которой я учился администрировать,
 
-Установка PostgreSQL 
-Официальная документация https://www.postgresql.org/download/linux/ubuntu/ 
-Загрузки для Linux (Ubuntu) 
+## Установка PostgreSQL 
+Официальная документация <https://www.postgresql.org/download/linux/ubuntu/>
+
+### Загрузки для Linux (Ubuntu) 
 PostgreSQL доступен во всех версиях Ubuntu по умолчанию. Однако Ubuntu «создает 
 моментальные снимки» определенной версии PostgreSQL, которая затем поддерживается 
 на протяжении всего срока службы этой версии Ubuntu. Другие версии PostgreSQL 
 доступны в репозитории apt PostgreSQL. 
-Apt-репозиторий PostgreSQL 
+### Apt-репозиторий PostgreSQL 
 Если версия, включенная в вашу версию Ubuntu, не та, которую вы хотите, вы можете 
 использовать репозиторий PostgreSQL Apt . Этот репозиторий будет интегрирован с 
 вашими обычными системами и системой управления исправлениями, а также будет 
 предоставлять автоматические обновления для всех поддерживаемых версий PostgreSQL в 
 течение всего срока поддержки PostgreSQL . 
 Репозиторий PostgreSQL Apt поддерживает текущие версии Ubuntu: 
- 
- 
- 
- 
-кинетический (22.10, не LTS) 
-варенье (22.04, ЛТС) 
-фокальный (20.04, ЛТС) 
-бионический (18.04, LTS) 
+
+* Kinetic (22.10, не LTS) 
+* Focal (20.04, LTS) 
+* Bionic (18.04, LTS) 
 на следующих архитектурах: 
-amd64
-arm64 (18.04 и новее; только версии LTS) 
-i386 (18.04 и старше) 
-ppc64el (только версии LTS) 
+* amd64
+* arm64 (18.04 и новее; только версии LTS) 
+* i386 (18.04 и старше) 
+* ppc64el (только версии LTS)
+ 
 Чтобы использовать репозиторий apt, выполните следующие действия: 
+
 # Create the file repository configuration: 
-sudo sh -c 'echo "deb http://apt.postgresql.org/pub/repos/apt 
-$(lsb_release -cs)-pgdg main" > /etc/apt/sources.list.d/pgdg.list' 
+`sudo sh -c 'echo "deb http://apt.postgresql.org/pub/repos/apt
+$(lsb_release -cs)-pgdg main" > /etc/apt/sources.list.d/pgdg.list'` 
+
 # Import the repository signing key: 
-wget --quiet -O - https://www.postgresql.org/media/keys/ACCC4CF8.asc | 
-sudo apt-key add - 
-# Install the latest version of PostgreSQL. 
-# If you want a specific version, use 'postgresql-12' or similar 
-instead of 'postgresql': 
-sudo apt-get -y install postgresql 
+`wget --quiet -O - https://www.postgresql.org/media/keys/ACCC4CF8.asc | sudo apt-key add -` 
+
+# Install the latest version of PostgreSQL.
+# If you want a specific version, use 'postgresql-12' or similar instead of 'postgresql': 
+`sudo apt-get -y install postgresql` 
+
 Дополнительные сведения о репозитории apt, включая ответы на часто задаваемые 
-вопросы, см. на странице PostgreSQL Apt Repository в вики . 
-Входит в дистрибутив 
-Ubuntu включает PostgreSQL по умолчанию. Чтобы установить PostgreSQL в Ubuntu, 
-используйте команду apt-get (или другую команду apt): 
-apt-get install postgresql-12 
+вопросы, см. на странице PostgreSQL Apt Repository в вики. 
+
+## Входит в дистрибутив
+Ubuntu включает PostgreSQL по умолчанию. Чтобы установить PostgreSQL в Ubuntu,
+используйте команду apt-get (или другую команду apt):
+`apt-get install postgresql-12` 
   
 Репозиторий содержит множество различных пакетов, включая сторонние 
-дополнения. Наиболее распространенные и важные пакеты (при необходимости замените номер версии): 
-postgresql-client-12 
-postgresql-12 
-клиентские библиотеки и клиентские двоичные файлы 
-libpq-dev 
-основной сервер базы данных 
-библиотеки и заголовочные файлы для разработки 
-интерфейса на языке C 
-postgresql-server-dev-12 
-библиотеки и заголовочные файлы для разработки бэкенда 
-на языке C 
+дополнения. Наиболее распространенные и важные пакеты (при необходимости замените номер версии):
+---
+postgresql-client-12    клиентские библиотеки и клиентские двоичные файлы 
+---
+postgresql-12    основной сервер базы данных
+---
+libpq-dev     библиотеки и заголовочные файлы для разработки интерфейса на языке C
+---
+postgresql-server-dev-12   библиотеки и заголовочные файлы для разработки бэкенда на языке C
+
+ 
 Убедитесь, что служба запущена: 
 $ sudo systemctl start postgresql.service 
 Проверка статуса сервиса: 
