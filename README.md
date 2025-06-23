@@ -175,6 +175,8 @@ _(второй вариант:_ `$ sudo -u tester psql` _)_
 
 `You are connected to database " tester " as user " tester " via socket in "/var/run/postgresql" at port "5432".`
 
+![9](https://github.com/user-attachments/assets/3f9fce3f-69cb-4828-9906-b5b051f292ba)
+
 Проверку желательно выполнять для разных пользователей с разными БД.
 
 ## Создание таблицы с данными 
