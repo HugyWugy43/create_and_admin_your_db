@@ -35,7 +35,10 @@ PostgreSQL доступен во всех версиях Ubuntu по умолч�
 
 # Install the latest version of PostgreSQL.
 # If you want a specific version, use 'postgresql-12' or similar instead of 'postgresql': 
-`sudo apt-get -y install postgresql` 
+`sudo apt-get -y install postgresql`<br>
+
+![1](https://github.com/user-attachments/assets/c258c586-8fc2-4e24-9b03-567c15a4108b)
+
 
 Дополнительные сведения о репозитории apt, включая ответы на часто задаваемые 
 вопросы, см. на странице PostgreSQL Apt Repository в вики. 
