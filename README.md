@@ -144,7 +144,6 @@ Shall the new role be a superuser? (y/n) y`
 ### Переход в командную строку PostgreSQL с новой ролью 
 Работа в консоли PostgreSQL подразумевает наличие аккаунта Ubuntu с именем БД 
 в Postgres.
-
 Добавим аккаунт Ubuntu, используя adduser (предварительно выйдя из аккаунта postgres), 
 назвав аналогично новой роли: 
   
