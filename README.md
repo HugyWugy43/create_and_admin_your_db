@@ -196,16 +196,14 @@ column_name3 col_type (field_length)
 В качестве непосредственного примера добавим таблицу книга (book): 
 ```
 tester=# CREATE TABLE book (  
-book_id serial PRIMARY KEY,  
-title varchar (50) NOT NULL,  
-author varchar (30) NOT NULL,  
-price DECIMAL(8, 2),
-amount INT  
-);
+tester=# book_id serial PRIMARY KEY,  
+tester=# title varchar (50) NOT NULL,  
+tester=# author varchar (30) NOT NULL,  
+tester=# price DECIMAL(8, 2),
+tester=# amount INT  
+tester=# );
 ```
-СУБД выводит информацию: 
-CREATE TABLE 
- 
+СУБД выводит информацию:  
 
 * **book_id** — столбец с идентификатором типа serial и автоинкрементом. Ему 
 присвоили свойство primary key, указывающее на использование не нулевых 
