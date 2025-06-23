@@ -42,7 +42,7 @@ _Пример записи команд на вм VirtualBox с образом D
 ![1](https://github.com/user-attachments/assets/c258c586-8fc2-4e24-9b03-567c15a4108b)
 
 Дополнительные сведения о репозитории apt, включая ответы на часто задаваемые 
-вопросы, см. на странице PostgreSQL Apt Repository в вики. 
+вопросы, см. на странице [PostgreSQL Apt Repository в вики](https://wiki.postgresql.org/wiki/Main_Page "wiki postgresql"). 
 
 ## Входит в дистрибутив
 Ubuntu включает PostgreSQL по умолчанию. Чтобы установить PostgreSQL в Ubuntu,
