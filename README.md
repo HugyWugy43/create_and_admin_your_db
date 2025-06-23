@@ -93,7 +93,12 @@ PostgreSQL.
 Узнать статус подключения: <br> 
 `postgres=# \conninfo` <br>
 Возврат в аккаунт: <br>
-`postgres=# \q` '\n'
+`postgres=# \q`
+
+Пример вывода команд:
+
+![5](https://github.com/user-attachments/assets/24437a46-c973-4317-b633-a77ef40d4cb9)
+
   
 ### Вариант 2 
 Войдем в аккаунт postgres с sudo. Если сейчас находимся в аккаунте postgres, нужно 
