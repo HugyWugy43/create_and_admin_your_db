@@ -149,13 +149,18 @@ Shall the new role be a superuser? (y/n) y`
   
 `$ sudo adduser tester`
 
-Добавив аккаунт tester, переключаемся на него и подключаемся к консоли: 
-`$ sudo -i -u tester 
-$ psql`
+_Пример того, как это будет выглядеть_: <br>
 
-[второй вариант]:
+![7](https://github.com/user-attachments/assets/d4893573-f736-4c7a-80c2-1b109f8ecce7)
 
-`$ sudo -u tester psql`
+
+Добавив аккаунт tester, переключаемся на него и подключаемся к консоли: <br> 
+`$ sudo -i -u tester` 
+`$ psql`
+
+![8](https://github.com/user-attachments/assets/0bdb8095-b02b-4452-bfa7-8429e98d33b4)
+
+_(второй вариант:_ `$ sudo -u tester psql` _)_
 
 Переключиться на другую БД:
 
