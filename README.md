@@ -28,20 +28,18 @@ PostgreSQL доступен во всех версиях Ubuntu по умолч�
  
 Чтобы использовать репозиторий apt, выполните следующие действия: 
 
-# Create the file repository configuration: 
+Создайте конфигурацию репозитория PostgreSQL:<br> 
 `sudo sh -c 'echo "deb http://apt.postgresql.org/pub/repos/apt $(lsb_release -cs)-pgdg main" > /etc/apt/sources.list.d/pgdg.list'` 
 
-# Import the repository signing key: 
+Импортируйте ключ подписи репозитория:<br>
 `wget --quiet -O - https://www.postgresql.org/media/keys/ACCC4CF8.asc | sudo apt-key add -` 
 
-# Install the latest version of PostgreSQL.
-# If you want a specific version, use 'postgresql-12' or similar instead of 'postgresql': 
+Установите PostgreSQL (Если вы используйте другую версию или вам нужна конкретная, то используйте 'postgresql-12' или что-то подобное вместо 'postgresql'): <br>
 `sudo apt-get -y install postgresql`<br>
 
 _Пример записи команд на вм VirtualBox с образом Debian:_<br>
 
 ![1](https://github.com/user-attachments/assets/c258c586-8fc2-4e24-9b03-567c15a4108b)
-
 
 Дополнительные сведения о репозитории apt, включая ответы на часто задаваемые 
 вопросы, см. на странице PostgreSQL Apt Repository в вики. 
