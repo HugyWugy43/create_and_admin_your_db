@@ -180,7 +180,13 @@ _(второй вариант:_ `$ sudo -u tester psql` _)_
 
 ## Создание таблицы с данными 
 Команда создания имеет вид: 
-```CREATE TABLE table_name (column_name1 col_type (field_length) column_constraints, column_name2 col_type (field_length), column_name3 col_type (field_length));```
+```
+CREATE TABLE table_name (
+column_name1 col_type (field_length) column_constraints,
+column_name2 col_type (field_length),
+column_name3 col_type (field_length)
+);
+```
 
 Создавая таблицу, указываем ее имя, столбцы, их типы, ограничения размеров полей.
 
