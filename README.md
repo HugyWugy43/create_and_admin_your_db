@@ -153,7 +153,7 @@ Shall the new role be a superuser? (y/n) y`
 `$ sudo -i -u tester 
 $ psql`
 
-<u>второй вариант</u>:
+[второй вариант]:
 
 `$ sudo -u tester psql`
 
