@@ -91,9 +91,9 @@ PostgreSQL.
 Работа в СУБД ведется из консоли.
 
 Узнать статус подключения: <br> 
-`postgres=# \conninfo`
+`postgres=# \conninfo` <br>
 Возврат в аккаунт: <br>
-`postgres=# \q` 
+`postgres=# \q` '\n'
   
 ### Вариант 2 
 Войдем в аккаунт postgres с sudo. Если сейчас находимся в аккаунте postgres, нужно 
