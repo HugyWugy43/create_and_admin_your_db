@@ -155,9 +155,7 @@ _Пример того, как это будет выглядеть_: <br>
 
 
 Добавив аккаунт tester, переключаемся на него и подключаемся к консоли: <br> 
-`$ sudo -i -u tester` 
-
-`$ psql`
+```$ sudo -i -u tester $ psql```
 
 ![8](https://github.com/user-attachments/assets/0bdb8095-b02b-4452-bfa7-8429e98d33b4)
 
